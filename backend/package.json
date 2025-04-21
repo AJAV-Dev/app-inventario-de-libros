@@ -1,5 +1,5 @@
 {
-  "name": "backend-libros",
+  "name": "backend",
   "version": "1.0.0",
   "scripts": {
     "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT"
