@@ -1,12 +1,10 @@
 {
-    "name": "backend-libros",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-      "start": "json-server --watch db.json --port 10000"
-    },
-    "dependencies": {
-      "json-server": "^0.17.3"
-    }
+  "name": "backend-libros",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server --watch db.json --port $PORT"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
   }
-  
+}
