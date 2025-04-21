@@ -21,7 +21,7 @@ export default {
         const agregarLibro = async () => {
             try {
                 // Enviar los datos del nuevo libro al backend
-                const response = await axios.post("http://localhost:3000/libros", nuevoLibro.value);
+                const response = await axios.post("https://app-inventario-de-libros.onrender.com/libros", nuevoLibro.value);
 
                 // Mostrar mensaje de éxito
                 setTimeout(() => {

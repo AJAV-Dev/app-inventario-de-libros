@@ -26,7 +26,7 @@ export default {
             const libroId = useRoute.params.id;
             try {
                // Obtener los datos del libro desde el backend
-                const response = await axios.get(`http://localhost:3000/libros/${libroId}`);
+                const response = await axios.get(`https://app-inventario-de-libros.onrender.com/libros/${libroId}`);
                 editarLibro.value = response.data;
             } catch (error) {
                 console.error("Error al cargar el libro:", error);
@@ -36,7 +36,7 @@ export default {
     const actualizarLibro = async () => {
         try {
             // Enviar los datos del nuevo libro al backend
-            await axios.put(`http://localhost:3000/libros/${editarLibro.value.id}`, editarLibro.value);
+            await axios.put(`https://app-inventario-de-libros.onrender.com/libros/${editarLibro.value.id}`, editarLibro.value);
 
             // Mostrar mensaje de éxito
             setTimeout(() => {

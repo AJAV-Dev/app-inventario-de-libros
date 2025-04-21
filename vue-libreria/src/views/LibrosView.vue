@@ -8,7 +8,7 @@ export default {
 
     const listarLibros = async () => {
         try {
-        const response = await axios.get("http://localhost:3000/libros");
+        const response = await axios.get("https://app-inventario-de-libros.onrender.com/libros");
         libros.value = response.data;
         console.log(libros.value);
         } catch (error) {
@@ -22,7 +22,7 @@ export default {
         return; // Si el usuario cancela, no hacemos nada
         }
         try {
-        await axios.delete(`http://localhost:3000/libros/${id}`);
+        await axios.delete(`https://app-inventario-de-libros.onrender.com/libros/${id}`);
         console.log("Libro eliminado:", id);
         listarLibros(); // Actualiza la lista después de eliminar
         } catch (error) {
