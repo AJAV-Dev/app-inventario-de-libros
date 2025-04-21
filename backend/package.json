@@ -1,9 +1,8 @@
 {
-  "name": "backend",
+  "name": "backend-libros",
   "version": "1.0.0",
   "scripts": {
-    "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT"
-
+    "start": "node index.js"
   },
   "dependencies": {
     "json-server": "^0.17.3"
