@@ -111,12 +111,62 @@ export default {
                 <label for="image">Imagen del libro</label>
                 <input name="image" type="text" placeholder="Imagen del libro" v-model="actualizarLibro.image" required>
             </div>
-            <button type="submit">Guardar cambios</button>
+            <button class="enviar" type="submit">Guardar cambios</button>
         </form>
     </main>
 </template>
 
 
-<style>
+<style scoped>
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1rem;
+}
+input {
+    padding: 0.5rem;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.enviar {
+    background-color: #028a36;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.enviar:hover {
+    background-color: #027a31;
+    transform: scale(1.05);
+}
 
 </style>
