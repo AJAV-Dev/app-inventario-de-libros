@@ -58,17 +58,24 @@ app-inventario-de-libros/
 ## 🧪 Cómo ejecutar localmente
 
 1. **Clona el repositorio**:
+   
 
    git clone https://github.com/AJAV-Dev/app-inventario-de-libros.git
+   
    cd app-inventario-de-libros
 
-2. **Instala dependencias y corre el backend**:
+3. **Instala dependencias y corre el backend**:
+   
 
   npm install
+  
   npm start
    
 3. **Corree el frontend**:
+   
 
   cd vue-libreria
+  
   npm install
+  
   npm run dev
